@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("./components/Alert/Alert.css");
+@import url("./components/Avatar/Avatar.css");
+@import url("./components/Badge/Badge.css");
+@import url("./components/Button/Button.css");
+@import url("./components/Card/Card.css");
+@import url("./components/Headings/Headings.css");
+@import url("./components/Text/Text.css");
+@import url("./components/Image/Headings.css");
 
 :root {
   --btnColor: #a3afba;
