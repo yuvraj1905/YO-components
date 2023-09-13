@@ -20,8 +20,8 @@ const Home = () => {
           </span>
         </h1>
         <p>A collection of innovative components for modern web development</p>
-        <button onClick={() => navigate("/components/alert")}>
-          Explore Docs
+        <button onClick={() => navigate("/components/installation")}>
+          Get started
         </button>
       </div>
     </div>
