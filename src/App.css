@@ -4,9 +4,9 @@
 @import url("./components/Badge/Badge.css");
 @import url("./components/Button/Button.css");
 @import url("./components/Card/Card.css");
-@import url("./components/Headings/Headings.css");
+@import url("./components/Headings/Heading.css");
 @import url("./components/Text/Text.css");
-@import url("./components/Image/Headings.css");
+@import url("./components/Image/Image.css");
 
 :root {
   --btnColor: #a3afba;
