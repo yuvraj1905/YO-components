@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import { mainContentChooser } from "../utils/mainContentChooser";
 import { list } from "../utils/ListOfComponents";
@@ -9,6 +9,9 @@ const Components = () => {
     backgroundColor: isActive ? "grey" : "",
     color: isActive ? "white" : "",
   });
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [category]);
   return (
     <div className="componentsPage">
       <div className="navbar">
