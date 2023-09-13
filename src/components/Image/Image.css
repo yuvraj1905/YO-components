@@ -1,0 +1,26 @@
+.imageCard {
+  width: 25vw;
+  height: 40vh;
+  padding: 1rem;
+  border: 1px solid;
+  position: relative;
+  margin: 1.5rem auto;
+}
+.resImg {
+  width: 100%;
+  height: 100%;
+}
+
+.imagesSection {
+  height: 30vh;
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgRound {
+  width: 30%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}

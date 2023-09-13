@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.png";
+import logo from "../utils/logo.png";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -20,10 +20,11 @@ const Home = () => {
           </span>
         </h1>
         <p>A collection of innovative components for modern web development</p>
-        <button onClick={() => navigate("/installation")}>Get Started</button>
+        <button onClick={() => navigate("/components/alert")}>
+          Explore Docs
+        </button>
       </div>
     </div>
   );
 };
-
 export default Home;

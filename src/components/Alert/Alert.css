@@ -1,0 +1,42 @@
+.alerts {
+  width: 41.5vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  border: 2px solid;
+  position: relative;
+  margin-top: 1.5rem;
+  gap: 1rem;
+  > p {
+    width: 95%;
+    padding: 0.75rem;
+    font-weight: 600;
+  }
+}
+
+.success {
+  background-color: rgb(0, 85, 0);
+  color: white;
+}
+.success::before {
+  content: "✅";
+}
+
+.warning {
+  background-color: rgb(158, 133, 6);
+  color: white;
+}
+.warning::before {
+  content: "⚠️";
+}
+
+.error {
+  background-color: rgb(98, 21, 21);
+  color: white;
+}
+.error::before {
+  content: "❌";
+}

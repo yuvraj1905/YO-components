@@ -1,0 +1,40 @@
+.texts {
+  width: 53vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  min-height: 50vh;
+
+  gap: 1rem;
+  justify-content: space-between;
+  border: 1px solid;
+}
+
+.text-6xl {
+  font-size: 3rem;
+}
+.text-5xl {
+  font-size: 2.7rem;
+}
+.text-4xl {
+  font-size: 2.4rem;
+}
+.text-3xl {
+  font-size: 2.1rem;
+}
+.text-2xl {
+  font-size: 1.8rem;
+}
+.text-xl {
+  font-size: 1.5rem;
+}
+.text-lg {
+  font-size: 1.2rem;
+}
+.text-md {
+  font-size: 0.9rem;
+}
+.text-sm {
+  font-size: 0.6rem;
+}

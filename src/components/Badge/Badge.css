@@ -1,0 +1,74 @@
+.imagesBadgePage {
+  width: 40vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem;
+  border: 2px solid;
+  position: relative;
+  margin-top: 1.5rem;
+  min-height: 15vh;
+}
+
+.widerBadgeSection {
+  width: 52.5vw;
+}
+
+.imgBadge {
+  width: 100%;
+  height: 100%;
+  border: 4px solid #a3afba;
+}
+
+.imagesBadgePage > span {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.badgeOnline {
+  width: 24%;
+  height: 24vh;
+}
+.badgeOffline {
+  width: 24%;
+  height: 24vh;
+}
+.imagesBadgePage > span > img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.badgeOffline::after {
+  content: "🔴";
+  font-size: 1.35rem;
+  position: absolute;
+  border-radius: 50%;
+  right: 1.5rem;
+  bottom: 0.2rem;
+}
+
+.badgeOnline::after {
+  content: "🟢";
+  font-size: 1.35rem;
+  position: absolute;
+  border-radius: 50%;
+  right: 1.5rem;
+  bottom: 0.2rem;
+}
+
+.badgeNumber {
+  position: relative;
+  display: flex;
+  align-items: center;
+  > p {
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0px 6px;
+    top: 0;
+    right: -0.1rem;
+  }
+}

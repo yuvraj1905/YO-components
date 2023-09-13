@@ -1,24 +1,29 @@
 import React from "react";
+import { NavLink, useParams } from "react-router-dom";
+import { mainContentChooser } from "../utils/mainContentChooser";
+import { list } from "../utils/ListOfComponents";
 
 const Components = () => {
-  const list = [
-    "Avatar",
-    "Alert",
-    "Badge",
-    "Button",
-    "Card",
-    "Headings",
-    "Text",
-    "Image",
-  ];
+  const { category } = useParams();
+  const activeStyler = ({ isActive }) => ({
+    backgroundColor: isActive ? "grey" : "",
+    color: isActive ? "white" : "",
+  });
   return (
     <div className="componentsPage">
-      <h2 style={{ marginTop: "2rem" }}>All components</h2>
-      <div className="componentsConteiner">
+      <div className="navbar">
+        <h2>All components</h2>
         {list.map((li) => (
-          <button className="unitComponent">{li}</button>
+          <NavLink
+            style={activeStyler}
+            className="unitComponent"
+            to={`/components/${li}`}
+          >
+            {li.charAt(0).toUpperCase() + li.slice(1)}
+          </NavLink>
         ))}
       </div>
+      <div className="mainComponents">{mainContentChooser(category)}</div>
     </div>
   );
 };

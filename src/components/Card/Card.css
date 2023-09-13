@@ -1,0 +1,78 @@
+.card {
+  width: 36vw;
+  border: 1px solid black;
+  position: relative;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin: 1rem auto;
+}
+
+.premiumBadge::after {
+  content: "PREMIUM";
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  padding: 0.25rem;
+  background-color: #a3afba;
+  border-radius: 4px;
+  color: white;
+}
+
+.cardWithDismiss::after {
+  content: "❌";
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  padding: 0.25rem;
+  border-radius: 4px;
+  color: white;
+}
+
+.cardWithOverlay {
+  > img {
+    width: 36vw;
+  }
+  > span {
+    position: absolute;
+    background-color: #a3afba;
+    opacity: 0.8;
+    font-size: 1.5rem;
+    height: 30%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+.textOnlyCard {
+  padding: 2rem;
+}
+
+.horizontalCard {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+  > img {
+    width: 75%;
+  }
+  > span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+}
+
+.shadowCard {
+  box-shadow: 15px 15px skyblue;
+}

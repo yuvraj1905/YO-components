@@ -1,0 +1,30 @@
+.images-avatar {
+  width: 42vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  border: 2px solid;
+  position: relative;
+  margin-top: 1.5rem;
+  > img {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.imgSm {
+  width: 3vw;
+  height: 6vh;
+}
+
+.imgMd {
+  width: 4vw;
+  height: 9vh;
+}
+
+.imgLg {
+  width: 5vw;
+  height: 12vh;
+}
